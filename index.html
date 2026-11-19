@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head><link crossorigin="anonymous" href="https://file.squarespace-cdn.com" rel="preconnect"/><link crossorigin="anonymous" href="https://use.typekit.net" rel="preconnect"/>
+<head>
+<link rel="preconnect" href="https://use.typekit.net" crossorigin/>
+<link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin/>
+<link rel="preload" href="https://use.typekit.net/af/221692/00000000000000007735b3da/31/l?subset_id=2&amp;fvd=n4&amp;v=3" as="font" type="font/woff2" crossorigin/>
 <meta charset="utf-8"/>
 <meta name="robots" content="noindex"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
@@ -14,13 +17,11 @@
 
 <style>
 @font-face { font-family: p22-mackinac-pro; src: url("https://use.typekit.net/af/221692/00000000000000007735b3da/31/l?subset_id=2&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/221692/00000000000000007735b3da/31/d?subset_id=2&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/221692/00000000000000007735b3da/31/a?subset_id=2&fvd=n4&v=3") format("opentype"); font-weight: 400; font-style: normal; font-stretch: normal; font-display: swap; }
-@font-face { font-family: Inter; font-style: normal; font-weight: 500; font-display: swap; src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/935205cf-c37d-4a5e-b0c0-fa45f321e213/latin.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: Inter; font-style: normal; font-weight: 700; font-display: swap; src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/b649195f-d7be-4a83-88d7-87c74c1f1590/latin.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: Inter; font-style: normal; font-weight: 400; font-display: swap; src: url("https://file.squarespace-cdn.com/content/v2/namespaces/fonts/libraries/sqsp/assets/ac496057-4c9f-4e6b-ae6d-795906fe1a84/latin.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: Inter; font-style: normal; font-weight: 100 900; font-display: swap; src: url("fonts/inter-latin-wght-normal.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
     :root {
       /* Brand tokens and font families verified against the supplied StayNue.mhtml.
-         Images and original wordmark are embedded; font files remain remotely hosted. */
+         Images and the wordmark are embedded. Inter is bundled; P22 Mackinac Pro loads from Adobe Fonts. */
       --brand: #a74d4a;
       --brand-hover: #913f3d;
       --paper: #f5f5f5;
@@ -699,7 +700,7 @@ details[open] > .repeat-summary { border-bottom: 1px solid var(--line); }
 <p class="eyebrow">Onboarding preview</p>
 <h2 id="credit-title">About this prototype</h2>
 <p><strong>Brand reference:</strong> The supplied StayNue.mhtml website archive. This page uses its original wordmark, brick red #A74D4A, light gray #F5F5F5, warm stone #EAE6E1, near-black #121212, and 8-pixel button corners. Muted sage #818B7E is retained as a reserved brand color.</p>
-<p><strong>Typography:</strong> P22 Mackinac Pro for headings and Inter for body text and buttons. These fonts load from the original online font sources in the saved website; no font files are bundled. Georgia and Arial are the offline fallbacks. A deployed portal should use StayNue's configured webfont service.</p>
+<p><strong>Typography:</strong> P22 Mackinac Pro for headings and Inter for body text and buttons. Inter is bundled with the demo. P22 Mackinac Pro loads from Adobe Fonts. Georgia and Arial are the offline fallbacks. A deployed portal should use StayNue's configured webfont service.</p>
 <p><strong>Photos:</strong> Five sample property photographs extracted from the supplied StayNue website archive. They are from different properties, not 100 Example Lane. Replace them with the owner's approved property photos before launch.</p>
 <p>The photos and original logo are embedded in this HTML, so they do not require an internet connection. The carousel and navigation work locally.</p>
 <p>Start onboarding opens a guided property questionnaire with eight sections. Draft answers save in the current browser on this device. Selected files are not uploaded or included in answer downloads. This preview has no connected login, database, or submission service, and nothing is sent to StayNue.</p>
